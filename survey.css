@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background-image: linear-gradient(
+    115deg,
+    rgba(58, 58, 158, 0.8),
+    rgba(136, 136, 206, 0.7)),
+    url(survey-form-background.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.overlay{
+    padding: 10px 30px;
+    color: #fff;
+}
+.form-info{
+    padding: 20px;
+    text-align: center;
+}
+#description{
+    font-style: italic;
+    font-weight: 200;
+    text-shadow: 1px 1px 1px rgb(0 0 0 / 40%);
+}
+#survey-form{
+    width: 100%;
+    margin: auto;
+    padding: 15px;
+    background-color: rgba(27, 27,50,0.8);
+}
+.form-name, .form-email, .form-age, .option, .fav-feature{
+    margin-top: 10px;
+}
+input[type=text],input[type=email], input[type=number], .option-select, .feature-select {
+    width: 100%;
+    border-radius: 3px;
+    border: none;
+    padding: 5px;
+    margin-top: 3px;
+}
+.recommend, .check-box{
+    margin-top: 10px;
+    line-height: 25px;
+}
+.friend {
+    width: 200px;
+}
+.improve{
+    width: 250px;
+    font-size: initial;
+}
+.check-box{
+    font-size: 15px;
+}
+input[type=checkbox]{
+    width: 10px;
+    display: inline-block;
+}
+.form-group{
+    margin-top: 10px;
+}
+textarea{
+    width: 100%;
+    margin-top: 3px;
+    padding: 5px;
+}
+.btn{
+    background-color: #37af65;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    width: 100%;
+    padding: 10px;
+}
+@media screen and (min-width:600px) {
+    #title{
+        font-size: 30px;
+        margin-top: 20px;
+    }
+    #description{
+        font-size: 20px;
+        margin-top: 10px;
+    }
+    .overlay{
+        margin: auto;
+        border-radius: 6px;
+        font-size: 20px;
+    }
+    #survey-form{
+        width: 70%;
+        border-radius: 5px;
+        padding: 25px;
+        background-color: rgba(27, 27,50,0.8);
+    }
+    .friend, .improve{
+        width: auto;
+    }
+}
+@media screen and (min-width:900px) {
+    #title{
+        font-size: 30px;
+        margin-top: 20px;
+    }
+    #description{
+        font-size: 20px;
+        margin-top: 10px;
+    }
+    .overlay{
+        margin: auto;
+        border-radius: 6px;
+        font-size: 20px;
+    }
+    #survey-form{
+        width: 50%;
+        border-radius: 5px;
+        padding: 25px;
+        background-color: rgba(27, 27,50,0.8);
+    }
+    .friend, .improve{
+        width: auto;
+    }
+}
